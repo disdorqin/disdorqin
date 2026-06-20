@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Project mission modules radar">
+  <defs>
+    <radialGradient id="radarBg" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#0c1430" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#06080f" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#02030a" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#a855f7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#00f5ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="lineGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="cardStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="cardFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1224" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#06080f" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="rsoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="rgrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2540" stroke-width="0.4" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="url(#radarBg)"/>
+  <rect width="1200" height="520" fill="url(#rgrid)"/>
+  <rect width="1200" height="520" fill="url(#coreGlow)"/>
+
+  <!-- Center hub label -->
+  <text x="600" y="36" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#5a6680" letter-spacing="4">MISSION MODULES // RESEARCH CLUSTER</text>
+
+  <!-- Radar concentric rings (rotating) -->
+  <g transform="translate(600, 270)">
+    <g opacity="0.6">
+      <circle r="60" fill="none" stroke="#00f5ff" stroke-width="0.6" opacity="0.6"/>
+      <circle r="100" fill="none" stroke="#00f5ff" stroke-width="0.5" opacity="0.5"/>
+      <circle r="150" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.4"/>
+      <circle r="200" fill="none" stroke="#00f5ff" stroke-width="0.4" opacity="0.3"/>
+      <circle r="240" fill="none" stroke="#00f5ff" stroke-width="0.3" opacity="0.25"/>
+    </g>
+
+    <!-- Radar sweep -->
+    <g>
+      <path d="M 0 0 L 200 0 A 200 200 0 0 0 141.42 -141.42 Z" fill="url(#coreGlow)" opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Core -->
+    <g filter="url(#rsoft)">
+      <circle r="22" fill="url(#coreGlow)"/>
+      <circle r="10" fill="#0a1224" stroke="#00f5ff" stroke-width="1.2">
+        <animate attributeName="r" values="10;12;10" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="#00f5ff">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Core label -->
+    <text y="55" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#00f5ff" letter-spacing="3" font-weight="700">RESEARCH CORE</text>
+    <text y="72" text-anchor="middle" font-family="ui-monospace, monospace" font-size="9" fill="#7a8aaa" letter-spacing="1.5">disdorqin // lab</text>
+  </g>
+
+  <!-- Energy flow connection lines (animated dashes) -->
+  <g stroke-linecap="round">
+    <!-- to top-left DARIS -->
+    <line x1="600" y1="270" x2="220" y2="120" stroke="url(#lineGrad)" stroke-width="1.5" filter="url(#rglow)">
+      <animate attributeName="stroke-dasharray" values="0 8; 8 8; 0 8" dur="2.4s" repeatCount="indefinite"/>
+    </line>
+    <!-- to top-right power-papers-daily -->
+    <line x1="600" y1="270" x2="980" y2="120" stroke="url(#lineGrad2)" stroke-width="1.5" filter="url(#rglow)">
+      <animate attributeName="stroke-dasharray" values="0 8; 8 8; 0 8" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+    <!-- to bottom-left research-claw -->
+    <line x1="600" y1="270" x2="220" y2="420" stroke="url(#lineGrad2)" stroke-width="1.5" filter="url(#rglow)">
+      <animate attributeName="stroke-dasharray" values="0 8; 8 8; 0 8" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+    </line>
+    <!-- to bottom-right tsplab -->
+    <line x1="600" y1="270" x2="980" y2="420" stroke="url(#lineGrad)" stroke-width="1.5" filter="url(#rglow)">
+      <animate attributeName="stroke-dasharray" values="0 8; 8 8; 0 8" dur="2.2s" begin="1.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Project cards -->
+  <!-- DARIS top-left -->
+  <g transform="translate(40, 80)">
+    <rect width="360" height="100" rx="8" fill="url(#cardFill)" stroke="url(#cardStroke)" stroke-width="1" filter="url(#rglow)"/>
+    <rect x="2" y="2" width="356" height="4" fill="#00f5ff" opacity="0.6"/>
+    <text x="20" y="32" font-family="ui-monospace, monospace" font-size="20" font-weight="800" fill="#00f5ff" letter-spacing="2">DARIS</text>
+    <text x="20" y="56" font-family="ui-monospace, monospace" font-size="11" fill="#c9d1d9" letter-spacing="0.4">Auto Research Workflow</text>
+    <g transform="translate(20, 72)">
+      <rect width="78" height="20" rx="3" fill="#00f5ff" opacity="0.12" stroke="#00f5ff" stroke-width="0.6"/>
+      <text x="39" y="14" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#00f5ff" font-weight="700">TYPESCRIPT</text>
+    </g>
+    <g transform="translate(280, 18)">
+      <circle r="4" fill="#a3e635" filter="url(#rglow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#a3e635" letter-spacing="1">ONLINE</text>
+    </g>
+  </g>
+
+  <!-- power-papers-daily top-right -->
+  <g transform="translate(800, 80)">
+    <rect width="360" height="100" rx="8" fill="url(#cardFill)" stroke="url(#cardStroke)" stroke-width="1" filter="url(#rglow)"/>
+    <rect x="2" y="2" width="356" height="4" fill="#fbbf24" opacity="0.6"/>
+    <text x="20" y="32" font-family="ui-monospace, monospace" font-size="20" font-weight="800" fill="#fbbf24" letter-spacing="2">power-papers-daily</text>
+    <text x="20" y="56" font-family="ui-monospace, monospace" font-size="11" fill="#c9d1d9" letter-spacing="0.4">Daily AI literature mining for power systems</text>
+    <g transform="translate(20, 72)">
+      <rect width="78" height="20" rx="3" fill="#fbbf24" opacity="0.12" stroke="#fbbf24" stroke-width="0.6"/>
+      <text x="39" y="14" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#fbbf24" font-weight="700">JAVASCRIPT</text>
+    </g>
+    <g transform="translate(280, 18)">
+      <circle r="4" fill="#a3e635" filter="url(#rglow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#a3e635" letter-spacing="1">STREAMING</text>
+    </g>
+  </g>
+
+  <!-- research-claw bottom-left -->
+  <g transform="translate(40, 380)">
+    <rect width="360" height="100" rx="8" fill="url(#cardFill)" stroke="url(#cardStroke)" stroke-width="1" filter="url(#rglow)"/>
+    <rect x="2" y="94" width="356" height="4" fill="#a855f7" opacity="0.6"/>
+    <text x="20" y="32" font-family="ui-monospace, monospace" font-size="20" font-weight="800" fill="#a855f7" letter-spacing="2">research-claw</text>
+    <text x="20" y="56" font-family="ui-monospace, monospace" font-size="11" fill="#c9d1d9" letter-spacing="0.4">Multi-agent research paper generation pipeline</text>
+    <g transform="translate(20, 72)">
+      <rect width="60" height="20" rx="3" fill="#a855f7" opacity="0.12" stroke="#a855f7" stroke-width="0.6"/>
+      <text x="30" y="14" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#c4b5fd" font-weight="700">PYTHON</text>
+    </g>
+    <g transform="translate(280, 18)">
+      <circle r="4" fill="#a855f7" filter="url(#rglow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#c4b5fd" letter-spacing="1">PIPELINE</text>
+    </g>
+  </g>
+
+  <!-- tsplab bottom-right -->
+  <g transform="translate(800, 380)">
+    <rect width="360" height="100" rx="8" fill="url(#cardFill)" stroke="url(#cardStroke)" stroke-width="1" filter="url(#rglow)"/>
+    <rect x="2" y="94" width="356" height="4" fill="#a3e635" opacity="0.6"/>
+    <text x="20" y="32" font-family="ui-monospace, monospace" font-size="20" font-weight="800" fill="#a3e635" letter-spacing="2">TSPLab</text>
+    <text x="20" y="56" font-family="ui-monospace, monospace" font-size="11" fill="#c9d1d9" letter-spacing="0.4">Forecast experiment // audit / monitor / tune / compare</text>
+    <g transform="translate(20, 72)">
+      <rect width="60" height="20" rx="3" fill="#a3e635" opacity="0.12" stroke="#a3e635" stroke-width="0.6"/>
+      <text x="30" y="14" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10" fill="#a3e635" font-weight="700">PYTHON</text>
+    </g>
+    <g transform="translate(280, 18)">
+      <circle r="4" fill="#00f5ff" filter="url(#rglow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="14" y="4" font-family="ui-monospace, monospace" font-size="10" fill="#00f5ff" letter-spacing="1">ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- Coordinate ticks -->
+  <g font-family="ui-monospace, monospace" font-size="9" fill="#5a6680" opacity="0.7">
+    <text x="600" y="120" text-anchor="middle">N</text>
+    <text x="600" y="430" text-anchor="middle">S</text>
+    <text x="200" y="265" text-anchor="middle">W</text>
+    <text x="1000" y="265" text-anchor="middle">E</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40" role="img" aria-label="Neon energy divider">
+  <defs>
+    <linearGradient id="dline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00f5ff" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#00f5ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dglow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g>
+    <line x1="0" y1="20" x2="1200" y2="20" stroke="url(#dline)" stroke-width="1.2" filter="url(#dglow)"/>
+    <line x1="0" y1="20" x2="1200" y2="20" stroke="url(#dline)" stroke-width="0.4" opacity="0.7"/>
+
+    <!-- Center node -->
+    <circle cx="600" cy="20" r="4" fill="#a855f7" filter="url(#dglow)">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="20" r="2" fill="#fff"/>
+
+    <!-- Energy flow particles -->
+    <circle cy="20" r="2" fill="#00f5ff" filter="url(#dglow)">
+      <animate attributeName="cx" values="0;1200" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cy="20" r="1.5" fill="#a855f7" filter="url(#dglow)">
+      <animate attributeName="cx" values="0;1200" dur="3.5s" begin="1.75s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.5s" begin="1.75s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

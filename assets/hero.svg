@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Letian Zhang — Cyber Energy Research Lab">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05060f"/>
+      <stop offset="55%" stop-color="#08091a"/>
+      <stop offset="100%" stop-color="#02030a"/>
+    </linearGradient>
+
+    <!-- Horizon glow -->
+    <radialGradient id="horizonGlow" cx="50%" cy="78%" r="55%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.30"/>
+      <stop offset="40%" stop-color="#7a3cff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Grid stroke -->
+    <linearGradient id="gridStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f5ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Title gradient -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+
+    <!-- Subtitle gradient -->
+    <linearGradient id="subGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a3e635"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+
+    <!-- Wave gradient -->
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f5ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2540" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+
+    <pattern id="gridFine" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#101a30" stroke-width="0.3" opacity="0.4"/>
+    </pattern>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#00f5ff" opacity="0.025"/>
+    </pattern>
+
+    <!-- Node radial -->
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#00f5ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="violetNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Base layers -->
+  <rect width="1200" height="420" fill="url(#bgGrad)"/>
+  <rect width="1200" height="420" fill="url(#gridFine)"/>
+  <rect width="1200" height="420" fill="url(#scanlines)"/>
+  <rect width="1200" height="420" fill="url(#horizonGlow)"/>
+
+  <!-- Perspective grid floor (cyber horizon) -->
+  <g transform="translate(0, 320)" opacity="0.7">
+    <g stroke="url(#gridStroke)" stroke-width="0.8" fill="none">
+      <!-- Horizontal lines -->
+      <line x1="0" y1="0" x2="1200" y2="0" opacity="0.9"/>
+      <line x1="-100" y1="30" x2="1300" y2="30" opacity="0.55"/>
+      <line x1="-200" y1="60" x2="1400" y2="60" opacity="0.35"/>
+      <line x1="-300" y1="90" x2="1500" y2="90" opacity="0.20"/>
+      <!-- Vertical perspective lines -->
+      <line x1="600" y1="0" x2="0" y2="100"/>
+      <line x1="600" y1="0" x2="100" y2="100"/>
+      <line x1="600" y1="0" x2="200" y2="100"/>
+      <line x1="600" y1="0" x2="300" y2="100"/>
+      <line x1="600" y1="0" x2="400" y2="100"/>
+      <line x1="600" y1="0" x2="500" y2="100"/>
+      <line x1="600" y1="0" x2="600" y2="100"/>
+      <line x1="600" y1="0" x2="700" y2="100"/>
+      <line x1="600" y1="0" x2="800" y2="100"/>
+      <line x1="600" y1="0" x2="900" y2="100"/>
+      <line x1="600" y1="0" x2="1000" y2="100"/>
+      <line x1="600" y1="0" x2="1100" y2="100"/>
+      <line x1="600" y1="0" x2="1200" y2="100"/>
+    </g>
+  </g>
+
+  <!-- Grid floor animation: subtle scroll -->
+  <g transform="translate(0, 320)" opacity="0.4">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f5ff" stroke-width="1" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Time series waveform (animated) -->
+  <g filter="url(#softGlow)" opacity="0.9">
+    <path d="M 0 250 L 60 240 L 110 255 L 160 220 L 210 235 L 260 195 L 310 210 L 360 175 L 410 200 L 460 160 L 510 185 L 560 145 L 610 175 L 660 130 L 710 165 L 760 120 L 810 155 L 860 110 L 910 140 L 960 105 L 1010 130 L 1060 95 L 1110 120 L 1160 100 L 1200 110"
+          fill="none" stroke="url(#waveGrad)" stroke-width="2">
+      <animate attributeName="d"
+        values="M 0 250 L 60 240 L 110 255 L 160 220 L 210 235 L 260 195 L 310 210 L 360 175 L 410 200 L 460 160 L 510 185 L 560 145 L 610 175 L 660 130 L 710 165 L 760 120 L 810 155 L 860 110 L 910 140 L 960 105 L 1010 130 L 1060 95 L 1110 120 L 1160 100 L 1200 110;
+                M 0 245 L 60 260 L 110 230 L 160 250 L 210 215 L 260 240 L 310 205 L 360 230 L 410 180 L 460 210 L 510 165 L 560 200 L 610 155 L 660 190 L 710 140 L 760 175 L 810 130 L 860 160 L 910 120 L 960 150 L 1010 110 L 1060 140 L 1110 100 L 1160 125 L 1200 95;
+                M 0 250 L 60 240 L 110 255 L 160 220 L 210 235 L 260 195 L 310 210 L 360 175 L 410 200 L 460 160 L 510 185 L 560 145 L 610 175 L 660 130 L 710 165 L 760 120 L 810 155 L 860 110 L 910 140 L 960 105 L 1010 130 L 1060 95 L 1110 120 L 1160 100 L 1200 110"
+        dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Secondary thinner waveform -->
+  <g opacity="0.5">
+    <path d="M 0 280 L 80 270 L 160 285 L 240 265 L 320 280 L 400 255 L 480 275 L 560 250 L 640 270 L 720 245 L 800 265 L 880 240 L 960 260 L 1040 235 L 1120 255 L 1200 245"
+          fill="none" stroke="#a855f7" stroke-width="1.2" filter="url(#neonGlow)">
+      <animate attributeName="d"
+        values="M 0 280 L 80 270 L 160 285 L 240 265 L 320 280 L 400 255 L 480 275 L 560 250 L 640 270 L 720 245 L 800 265 L 880 240 L 960 260 L 1040 235 L 1120 255 L 1200 245;
+                M 0 275 L 80 285 L 160 265 L 240 280 L 320 260 L 400 275 L 480 250 L 560 270 L 640 245 L 720 265 L 800 240 L 880 260 L 960 235 L 1040 255 L 1120 230 L 1200 250;
+                M 0 280 L 80 270 L 160 285 L 240 265 L 320 280 L 400 255 L 480 275 L 560 250 L 640 270 L 720 245 L 800 265 L 880 240 L 960 260 L 1040 235 L 1120 255 L 1200 245"
+        dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Power network nodes -->
+  <g filter="url(#softGlow)">
+    <!-- Power network node connections -->
+    <g stroke="#00f5ff" stroke-width="0.8" fill="none" opacity="0.6">
+      <line x1="180" y1="90" x2="280" y2="60"/>
+      <line x1="280" y1="60" x2="380" y2="100"/>
+      <line x1="380" y1="100" x2="280" y2="60"/>
+      <line x1="380" y1="100" x2="480" y2="70"/>
+      <line x1="480" y1="70" x2="580" y2="110"/>
+      <line x1="780" y1="80" x2="880" y2="50"/>
+      <line x1="880" y1="50" x2="980" y2="90"/>
+      <line x1="980" y1="90" x2="1080" y2="60"/>
+      <line x1="880" y1="50" x2="980" y2="90"/>
+    </g>
+    <!-- Nodes -->
+    <circle cx="180" cy="90" r="3" fill="#00f5ff"/>
+    <circle cx="280" cy="60" r="3" fill="#00f5ff"/>
+    <circle cx="380" cy="100" r="3" fill="#00f5ff"/>
+    <circle cx="480" cy="70" r="3" fill="#00f5ff"/>
+    <circle cx="580" cy="110" r="3" fill="#00f5ff"/>
+    <circle cx="780" cy="80" r="3" fill="#a855f7"/>
+    <circle cx="880" cy="50" r="3" fill="#a855f7"/>
+    <circle cx="980" cy="90" r="3" fill="#a855f7"/>
+    <circle cx="1080" cy="60" r="3" fill="#a855f7"/>
+
+    <!-- Glow halos -->
+    <circle cx="280" cy="60" r="10" fill="url(#nodeGlow)" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880" cy="50" r="10" fill="url(#violetNode)" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(600, 175)" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace">
+    <!-- Status badge -->
+    <g transform="translate(0, -90)">
+      <rect x="-90" y="-13" width="180" height="26" rx="13" fill="none" stroke="#00f5ff" stroke-width="1" opacity="0.8"/>
+      <rect x="-90" y="-13" width="180" height="26" rx="13" fill="#00f5ff" opacity="0.05"/>
+      <circle cx="-72" cy="0" r="3" fill="#a3e635" filter="url(#neonGlow)">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text y="4" font-size="11" fill="#a3e635" font-weight="700" letter-spacing="2.5">SYSTEM ONLINE // v3.1</text>
+    </g>
+
+    <!-- Main title -->
+    <text font-size="68" font-weight="800" fill="url(#titleGrad)" letter-spacing="6" filter="url(#strongGlow)">
+      LETIAN ZHANG
+    </text>
+
+    <!-- Subtitle -->
+    <text y="38" font-size="16" fill="url(#subGrad)" font-weight="500" letter-spacing="3.5" opacity="0.95">
+      TIME SERIES FORECASTING × POWER MARKETS × AUTOMATED RESEARCH
+    </text>
+
+    <!-- Cursor -->
+    <g transform="translate(0, 38)">
+      <rect x="280" y="-12" width="2" height="16" fill="#00f5ff" filter="url(#neonGlow)">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- Status tags row -->
+  <g transform="translate(600, 240)" text-anchor="middle" font-family="ui-monospace, monospace">
+    <g font-size="10" letter-spacing="1.5" font-weight="600">
+      <g transform="translate(-450, 0)">
+        <rect x="-55" y="-11" width="110" height="22" rx="3" fill="none" stroke="#00f5ff" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="-42" cy="0" r="2.5" fill="#a3e635">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/>
+        </circle>
+        <text y="3" fill="#00f5ff" x="-10">DARIS ONLINE</text>
+      </g>
+      <g transform="translate(-300, 0)">
+        <rect x="-55" y="-11" width="110" height="22" rx="3" fill="none" stroke="#a855f7" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="-42" cy="0" r="2.5" fill="#a3e635">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <text y="3" fill="#c4b5fd" x="-10">TSPLAB ACTIVE</text>
+      </g>
+      <g transform="translate(-130, 0)">
+        <rect x="-65" y="-11" width="130" height="22" rx="3" fill="none" stroke="#00f5ff" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="-52" cy="0" r="2.5" fill="#fbbf24">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <text y="3" fill="#00f5ff" x="-12">PAPER MINING</text>
+      </g>
+      <g transform="translate(80, 0)">
+        <rect x="-65" y="-11" width="130" height="22" rx="3" fill="none" stroke="#a3e635" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="-52" cy="0" r="2.5" fill="#a3e635">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite"/>
+        </circle>
+        <text y="3" fill="#a3e635" x="-12">FORECAST ENGINE</text>
+      </g>
+      <g transform="translate(310, 0)">
+        <rect x="-70" y="-11" width="140" height="22" rx="3" fill="none" stroke="#a855f7" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="-57" cy="0" r="2.5" fill="#a855f7">
+          <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text y="3" fill="#c4b5fd" x="-12">ENERGY SYSTEMS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Decorative corners -->
+  <g stroke="#00f5ff" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M 20 20 L 20 50 M 20 20 L 50 20"/>
+    <path d="M 1180 20 L 1180 50 M 1180 20 L 1150 20"/>
+    <path d="M 20 400 L 20 370 M 20 400 L 50 400"/>
+    <path d="M 1180 400 L 1180 370 M 1180 400 L 1150 400"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#00f5ff" filter="url(#neonGlow)">
+    <circle cx="120" cy="180" r="1.4">
+      <animate attributeName="cy" values="180;160;180" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="200" r="1.2" fill="#a855f7">
+      <animate attributeName="cy" values="200;180;200" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="150" r="1.5">
+      <animate attributeName="cy" values="150;130;150" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="170" r="1.3" fill="#a855f7">
+      <animate attributeName="cy" values="170;150;170" dur="3.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="200" r="1.5">
+      <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="150" r="1.2" fill="#a3e635">
+      <animate attributeName="cy" values="150;130;150" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Scanline sweep -->
+  <g opacity="0.15">
+    <rect x="0" y="0" width="1200" height="2" fill="#00f5ff">
+      <animate attributeName="y" values="0;420;0" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
