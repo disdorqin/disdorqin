@@ -165,4 +165,29 @@ If it involves predicting the future from data or automating the research proces
 
 - (今日无新增推荐行动 — 见 reports/2026-06-21.md)
 
- DAILY-BOT:END 
+ DAILY-BOT:END
+
+<!-- DAILY-BOT:START -->
+## ⚡ GitHub Public Contribution Command Center
+
+> Status: SAFE MODE
+> Scope: PUBLIC REPOS ONLY
+> Private repo access: BLOCKED
+> Last update: 2026-06-21
+
+### 今日作战状态
+
+| 指标 | 数量 |
+|---|---:|
+| 扫描 public 仓库 | 3 |
+| 跳过 private/internal 仓库 | 0 |
+| 外部 issue 候选 | 0 |
+| 生成 patch 草稿 | 0 |
+| 创建公开 PR | 0 |
+| 外部评论 | 0 |
+
+### 今日推荐行动
+
+- (今日无新增推荐行动 — 见 reports/2026-06-21.md)
+
+<!-- DAILY-BOT:END -->
