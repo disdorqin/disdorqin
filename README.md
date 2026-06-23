@@ -181,7 +181,7 @@ If it involves predicting the future from data or automating the research proces
 |---|---:|
 | 扫描 public 仓库 | 3 |
 | 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 0 |
+| 外部 issue 候选 | 81 |
 | 生成 patch 草稿 | 0 |
 | 创建公开 PR | 0 |
 | 外部评论 | 0 |
