@@ -173,7 +173,7 @@ If it involves predicting the future from data or automating the research proces
 > Status: SAFE MODE
 > Scope: PUBLIC REPOS ONLY
 > Private repo access: BLOCKED
-> Last update: 2026-06-27
+> Last update: 2026-06-28
 
 ### 今日作战状态
 
@@ -181,13 +181,13 @@ If it involves predicting the future from data or automating the research proces
 |---|---:|
 | 扫描 public 仓库 | 3 |
 | 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 86 |
+| 外部 issue 候选 | 88 |
 | 生成 patch 草稿 | 0 |
 | 创建公开 PR | 0 |
 | 外部评论 | 0 |
 
 ### 今日推荐行动
 
-- (今日无新增推荐行动 — 见 reports/2026-06-27.md)
+- (今日无新增推荐行动 — 见 reports/2026-06-28.md)
 
 <!-- DAILY-BOT:END -->
