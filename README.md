@@ -1,27 +1,27 @@
 <div align="center">
 
 # LETIAN ZHANG
+### AI Engineer & Research Builder
 
-<img src="./assets/hero.svg" width="100%" alt="Cyber Energy Research Lab" />
+<img src="./assets/hero.svg" width="100%" alt="Research Lab" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=700&color=00F5FF&center=true&vCenter=true&width=900&lines=Time+Series+Forecasting;Power+Markets+%26+Energy+Systems;Automated+Research+Workflows;AI+Literature+Mining;Forecasting+Experiment+Management;Building+DARIS+%7C+TSPLab+%7C+research-claw" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=700&color=00F5FF&center=true&vCenter=true&width=900&lines=Building+systems+that+turn+data+into+foresight;Time+Series+Forecasting+%26+Power+Markets;Automated+Research+Infrastructure;AI-Powered+Literature+Mining;Forecasting+Experiment+Management;Shaping+research+into+production-ready+pipelines" alt="Typing SVG" />
 
 </div>
 
 ---
 
-## Mission Brief
+## Mission
 
-> CS Student building systems at the intersection of **time series forecasting**, **power markets**, and **automated research infrastructure**.
+> I build at the intersection of **time series forecasting**, **power market analytics**, and **automated research infrastructure** — turning experimental ideas into production-ready systems.
 
-I don't do generic full-stack. I build specialized systems for:
+My work spans three layers:
 
-- **Time Series Forecasting** — NSE optimization, experiment audit, benchmarking pipelines  
-- **Power Markets & Energy Systems** — electricity price forecasting, microgrid optimization, demand-side analytics  
-- **Automated Research Tools** — AI-driven literature mining, paper generation pipelines, experiment orchestration  
-- **Forecasting Experiment Infrastructure** — reproducible, monitorable, and tunable research workflows  
+- **Forecasting Engine** — Multi-model fusion pipelines (LightGBM, CatBoost, XGBoost, TimesFM, TimeMixer), dynamic weight optimization, extreme price correction, and SOTA experiment management for electricity price forecasting.
+- **Research Automation** — AI-driven paper mining, automated literature summarization, multi-agent paper generation pipelines, and daily arXiv intelligence feeds for power systems research.
+- **Experiment Infrastructure** — TSPLab for audit/monitor/tune of forecasting experiments, ablation-aware walk-forward validation, daemon-based orchestration, and reproducible benchmark tooling.
 
-If it involves predicting the future from data or automating the research process, I'm interested.
+I build specialized systems for prediction, research acceleration, and experimental rigor.
 
 ---
 
@@ -35,17 +35,21 @@ If it involves predicting the future from data or automating the research proces
 
 <img src="./assets/neon-divider.svg" width="100%" alt="Divider" />
 
-## Research Stack
+## Tech Stack
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,typescript,javascript,nodejs,react,nextjs,docker,linux,git,github,vscode&theme=dark" alt="Skills" />
 </div>
 
+**Core:** Python, PyTorch, LightGBM, CatBoost, XGBoost, scikit-learn, pandas, numpy  
+**Infra:** Docker, GitHub Actions, Git, Linux, YAML-based experiment configs  
+**Research:** Time series forecasting, walk-forward validation, ablation studies, ledger-based dynamic fusion
+
 ---
 
 <img src="./assets/neon-divider.svg" width="100%" alt="Divider" />
 
-## Mission Modules
+## Project Radar
 
 <div align="center">
   <img src="./assets/project-radar.svg" width="100%" alt="Project Radar" />
@@ -65,6 +69,12 @@ If it involves predicting the future from data or automating the research proces
 <a href="https://github.com/disdorqin/tsplab">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=disdorqin&repo=tsplab&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=C9D1D9&icon_color=00D4FF" alt="tsplab" />
 </a>
+<a href="https://github.com/disdorqin/electricity_price_forecast3.0">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=disdorqin&repo=electricity_price_forecast3.0&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&text_color=C9D1D9&icon_color=F59E0B" alt="electricity_price_forecast3.0" />
+</a>
+<a href="https://github.com/disdorqin/epf-sota-experiment">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=disdorqin&repo=epf-sota-experiment&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=EC4899&text_color=C9D1D9&icon_color=EC4899" alt="epf-sota-experiment" />
+</a>
 
 </div>
 
@@ -72,13 +82,13 @@ If it involves predicting the future from data or automating the research proces
 
 <img src="./assets/neon-divider.svg" width="100%" alt="Divider" />
 
-## GitHub Command Center
+## GitHub Pulse
 
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=disdorqin&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=C9D1D9&icon_color=00F5FF&count_private=true" alt="Stats" height="170" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=disdorqin&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=C9D1D9&langs_count=8" alt="Langs" height="170" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=disdorqin&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=C9D1D9&langs_count=8" alt="Languages" height="170" />
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=disdorqin&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F5FF&ring=00F5FF&fire=00F5FF&currStreakLabel=00F5FF&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9" alt="Streak" />
 
@@ -88,16 +98,12 @@ If it involves predicting the future from data or automating the research proces
 
 <img src="./assets/neon-divider.svg" width="100%" alt="Divider" />
 
-
----
-
-<img src="./assets/neon-divider.svg" width="100%" alt="Divider" />
-
 ## Research Metrics
 
 <div align="center">
 
- Metrics - generated weekly by .github/workflows/metrics.yml 
+*Metrics — generated weekly by `.github/workflows/metrics.yml`*
+
 <img src="./assets/metrics.svg" width="100%" alt="GitHub Metrics" />
 
 </div>
@@ -112,14 +118,7 @@ If it involves predicting the future from data or automating the research proces
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=disdorqin&theme=tokyo-night&bg_color=0d1117&color=00f5ff&line=00f5ff&point=a855f7&area=true&hide_border=true" alt="Activity Graph" />
 
-<br>
-
- 3D Contribution Graph - generated by profile-3d.yml workflow 
- Go to Actions > 3D Contribution Graph and run workflow manually 
- Then uncomment below: 
-![3D Contribution](./profile-3d-contrib/profile-night-rainbow.svg) 
-
-<br>
+<br />
 
 <img src="https://raw.githubusercontent.com/disdorqin/disdorqin/output/github-contribution-grid-snake-dark.svg#gh-dark-mode-only" alt="Snake Dark" />
 <img src="https://raw.githubusercontent.com/disdorqin/disdorqin/output/github-contribution-grid-snake.svg#gh-light-mode-only" alt="Snake Light" />
@@ -132,62 +131,32 @@ If it involves predicting the future from data or automating the research proces
 
 <img src="./assets/neon-divider.svg" width="60%" alt="Divider" />
 
-<br><br>
+<br /><br />
 
-### *Building systems that turn data into foresight, and papers into pipelines.*
+### *Turning data into foresight, and papers into pipelines.*
 
-<br>
+<br />
 
-<img src="https://komarev.com/ghpvc/?username=disdorqin&label=MISSION+CONTROL+VIEWS&color=00F5FF&bg=0D1117&style=flat-square" alt="Views" />
+<img src="https://komarev.com/ghpvc/?username=disdorqin&label=PROFILE+VIEWS&color=00F5FF&bg=0D1117&style=flat-square" alt="Views" />
+
+<br /><br />
+
+**Let's connect** ✦ [Email](mailto:disdorqin@qq.com)
 
 </div>
 
- DAILY-BOT:START 
-## ⚡ GitHub Public Contribution Command Center
-
-> Status: SAFE MODE
-> Scope: PUBLIC REPOS ONLY
-> Private repo access: BLOCKED
-> Last update: 2026-06-21
-
-### 今日作战状态
-
-| 指标 | 数量 |
-|---|---:|
-| 扫描 public 仓库 | 3 |
-| 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 0 |
-| 生成 patch 草稿 | 0 |
-| 创建公开 PR | 0 |
-| 外部评论 | 0 |
-
-### 今日推荐行动
-
-- (今日无新增推荐行动 — 见 reports/2026-06-21.md)
-
- DAILY-BOT:END
-
 <!-- DAILY-BOT:START -->
-## ⚡ GitHub Public Contribution Command Center
+## GitHub Public Contribution Command Center
 
-> Status: SAFE MODE
-> Scope: PUBLIC REPOS ONLY
-> Private repo access: BLOCKED
-> Last update: 2026-07-07
+> **Status:** SAFE MODE — Public repos only  
+> **Private repo access:** BLOCKED  
+> **Last update:** 2026-07-07
 
-### 今日作战状态
-
-| 指标 | 数量 |
+| Metric | Count |
 |---|---:|
-| 扫描 public 仓库 | 3 |
-| 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 80 |
-| 生成 patch 草稿 | 0 |
-| 创建公开 PR | 0 |
-| 外部评论 | 0 |
-
-### 今日推荐行动
-
-- (今日无新增推荐行动 — 见 reports/2026-07-07.md)
+| Public repos scanned | 3 |
+| External issue candidates | 80 |
+| Patches drafted | 0 |
+| Public PRs created | 0 |
 
 <!-- DAILY-BOT:END -->
