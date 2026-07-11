@@ -144,7 +144,7 @@ Want a template? Most of my repos ship with `CONTRIBUTING.md` + `SECURITY.md` an
 > Status: SAFE MODE
 > Scope: PUBLIC REPOS ONLY
 > Private repo access: BLOCKED
-> Last update: 2026-07-10
+> Last update: 2026-07-11
 
 ### 今日作战状态
 
@@ -152,13 +152,13 @@ Want a template? Most of my repos ship with `CONTRIBUTING.md` + `SECURITY.md` an
 |---|---:|
 | 扫描 public 仓库 | 3 |
 | 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 82 |
+| 外部 issue 候选 | 74 |
 | 生成 patch 草稿 | 0 |
 | 创建公开 PR | 0 |
 | 外部评论 | 0 |
 
 ### 今日推荐行动
 
-- (今日无新增推荐行动 — 见 reports/2026-07-10.md)
+- (今日无新增推荐行动 — 见 reports/2026-07-11.md)
 
 <!-- DAILY-BOT:END -->
