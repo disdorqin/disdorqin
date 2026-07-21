@@ -144,7 +144,7 @@ Want a template? Most of my repos ship with `CONTRIBUTING.md` + `SECURITY.md` an
 > Status: SAFE MODE
 > Scope: PUBLIC REPOS ONLY
 > Private repo access: BLOCKED
-> Last update: 2026-07-20
+> Last update: 2026-07-21
 
 ### 今日作战状态
 
@@ -152,14 +152,14 @@ Want a template? Most of my repos ship with `CONTRIBUTING.md` + `SECURITY.md` an
 |---|---:|
 | 扫描 public 仓库 | 3 |
 | 跳过 private/internal 仓库 | 0 |
-| 外部 issue 候选 | 77 |
-| 生成 patch 草稿 | 1 |
+| 外部 issue 候选 | 81 |
+| 生成 patch 草稿 | 0 |
 | 创建公开 PR | 0 |
 | 外部评论 | 0 |
 
 ### 今日推荐行动
 
-- Patch draft for yohannaftali/simple_full_stack_inventory_system from https://github.com/yohannaftali/simple_full_stack_inventory_system/issues/35 (score 7.84)
+- (今日无新增推荐行动 — 见 reports/2026-07-21.md)
 
 <!-- DAILY-BOT:END -->
 
